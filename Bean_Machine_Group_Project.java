@@ -21,17 +21,17 @@ public class Bean_Machine_Group_Project {
 		 * ask user for # of balls(limit # of balls)
 		 */
 		
-		/*Method 3: Execute game:
+		/*Method 3: Execute game: Miguel
 		 * Setup array for bins
 		 * setup for loop 
 		 * inside for loop call custom method to return which bin get a bean.
 		 */
 		
-		/*Method 3b: bean dropping:
+		/*Method 3b: bean dropping: Miguel
 		 * return if it goes right or left.
 		 */
 		
-		//Method 4: Print out results
+		//Method 4: Print out results: Miguel
 		 
 		
 		//Method 5: Tell the user the game is over
