@@ -1,10 +1,10 @@
-import java.util.Scanner;
+
 public class Bean_Machine_Group_Project {
 	
 /*Method 3: Execute game: Miguel
 		 * Setup array for bins
 		 * setup for loop 
-		 * inside for loop call custom method to return which bin get a bean.
+		 * inside for loop call custom method to return which bin gets a bean.
 		 */
 	public static int binCount;
 	public static int ballCount;
