@@ -6,9 +6,9 @@ public class Bean_Machine_Group_Project {
 		
 		//System.out.println("Hello World");
 		
-		//call the run method
+		//call the run method:
 		
-		//call the test method
+		//call the test method:
 		
 		/*Method 1: greet user:
 		 * write a description to greet user
@@ -21,7 +21,7 @@ public class Bean_Machine_Group_Project {
 		 * ask user for # of balls(limit # of balls)
 		 */
 		
-		/*Method 3: Execute game
+		/*Method 3: Execute game:
 		 * Setup array for bins
 		 * setup for loop 
 		 * inside for loop call custom method to return which bin get a bean.
