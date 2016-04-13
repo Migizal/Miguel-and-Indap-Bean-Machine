@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class Bean_Machine_Group_Project {
 	
 /*Method 3: Execute game: Miguel
@@ -6,16 +6,45 @@ public class Bean_Machine_Group_Project {
 		 * setup for loop 
 		 * inside for loop call custom method to return which bin get a bean.
 		 */
-		public static int bins;
-		 public static void BeanMachine(){
-			 
-			int[] binarray = new int[bins + 1];
+	public static int binCount;
+	public static int ballCount;
 		
-		for (int i = 0; i < bins; i++){
+		 public static void topRun(){
 			 
-		 }
-		
+			 int[] binArray = new int[binCount];
+			 
+			 binArray = FillBinArray(binCount, ballCount, binArray);
+			 
+			 for (int i = 0; i < binCount; i++){
+				 System.out.println("The Amount of balls in bin number " + (i+1) + " is " + binArray[i] + "." );
+			 }
 		}
+		 public static int[] FillBinArray (int binCount, int ballCount, int[]binArray){
+			 
+		 
+		
+			 for (int ballNumber = 1; ballNumber <= ballCount; ballNumber = ballNumber + 1){
+				
+				 int left = 0;
+				 int binOfInterest = 0;
+				 
+				 for (int layerCount = 1; layerCount < binCount; layerCount = layerCount + 1){
+					 
+					 double randomNumber = Math.random();
+					 if (randomNumber < 0.5){
+						 left = left + 1;
+					 }
+				 }
+				 binOfInterest = binCount - left - 1;
+				 
+				 
+				 binArray[binOfInterest] = binArray[binOfInterest] + 1;
+			 }
+				 return binArray;
+				 
+			 }
+			 
+		 
 	public static void main(String[] args) {
 		// Outline the code for the Bean Machine and divide up work evenly.
 		
@@ -35,6 +64,8 @@ public class Bean_Machine_Group_Project {
 		 * ask user for # of bins
 		 * ask user for # of balls(limit # of balls)
 		 */
+		
+		
 		
 		
 		
