@@ -10,13 +10,13 @@ public class Bean_Machine_Group_Project {
 		
 		//call the test method:
 		
-		/*Method 1: greet user: Indap
+		/*Method 1: greet user:
 		 * write a description to greet user
 		 * explain the game
 		 * tell the user the options
 		 */
 		
-		/*Method 2: get user input: Indap
+		/*Method 2: get user input:
 		 * ask user for # of bins
 		 * ask user for # of balls(limit # of balls)
 		 */
