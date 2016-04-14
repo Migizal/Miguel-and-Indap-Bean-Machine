@@ -16,7 +16,11 @@ public class Bean_Machine_Group_Project {
 		 * tell the user the options
 		 */
 		
+<<<<<<< HEAD
 		/*Method 2: get user input: Indap1
+=======
+		/*Method 2: get user input: Indap
+>>>>>>> f911f371c5f4bf32be46e612bca339575db4f6fb
 		 * ask user for # of bins
 		 * ask user for # of balls(limit # of balls)
 		 */
