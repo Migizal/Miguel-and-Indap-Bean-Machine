@@ -1,28 +1,22 @@
+// import scanner
 import java.util.Scanner;
-public class Project1_CSI {
-
-
-	/*Method 3: Execute game: Miguel
-	 * Setup array for bins
-	 * setup for loop 
-	 * inside for loop call custom method to return which bin gets a bean.
-	 */
+public class Bean_Machine_Group_Project {
+	// declared public variables
 	public static int binCount;
 	public static int ballCount;
-
+	
+	// created custom method
 	public static void topRun(){
-
+		// created array for bins
 		int[] binArray = new int[binCount];
 
 		binArray = FillBinArray(binCount, ballCount, binArray);
-
+		// for loops
 		for (int i = 0; i < binCount; i++){
 			System.out.println("The Amount of balls in bin number " + (i+1) + " is " + binArray[i] + "." );
 		}
 	}
 	public static int[] FillBinArray (int binCount, int ballCount, int[]binArray){
-
-
 
 		for (int ballNumber = 1; ballNumber <= ballCount; ballNumber = ballNumber + 1){
 
@@ -38,74 +32,41 @@ public class Project1_CSI {
 			}
 			binOfInterest = binCount - left - 1;
 
-
 			binArray[binOfInterest] = binArray[binOfInterest] + 1;
 		}
 		return binArray;
 
 	}
-
+	// code for test method
+	public static void TestMethod(){
+		System.out.println("This method will test the users input.");
+		System.out.println("The user selected to have: "+ binCount  + " bins and " +  ballCount + " balls!");
+	}
 
 	public static void main(String[] args) {
-		// System.out.println("Hello World");
-		// Outline the code for the Bean Machine and divide up work evenly.
-
-		//System.out.println("Hello World");
+		// created scanner
 		Scanner input = new Scanner(System.in);
-
-		//call the run method:
-
-		//call the test method:
-
-		/*Method 1: greet user: Indap
-		 * write a description to greet user
-		 * explain the game
-		 * tell the user the options
-		 */
-		
-			
+		// greet user
 		System.out.println("Welcome to the Bean Machine Game.");
 		System.out.println("You will pick the number of bins and balls.");
 		System.out.println("Then, you will drop all the balls and see which bin it lands.\n");
-		/*Method 2: get user input: Indap1
-		 * ask user for # of bins
-		 * ask user for # of balls(limit # of balls)
-		 */
+		
 		System.out.println("Enter the number of bins(more than 1): ");
 		binCount = input.nextInt();
 
 		System.out.println("Enter the number of balls: ");
 		ballCount = input.nextInt();
 		
+		//call the test method:
+		TestMethod();
 		
-			
+		// call run method:
 		topRun();
 		
-		/*Method 3: Execute game:
-		 * Setup array for bins
-		 * setup for loop 
-		 * inside for loop call custom method to return which bin get a bean.
-		 */
-
-		/*Method 3b: bean dropping:
-		 * return if it goes right or left.
-		 */
-
-		//Method 4: Print out results
-
-		//System.out.println("Hello World");
-
-		//call the run method:
-
-		//call the test method:
-
-		//Method 5: Tell the user the game is over
-
 		System.out.println("Thank you for playing!");
 
 
 	}
 
 }
-
 
