@@ -39,7 +39,7 @@ public class Bean_Machine_Group_Project {
 	}
 	// code for test method:<---Test user input code from indap.Coded by miguel.
 	public static void TestMethod(){
-		System.out.println("This method will test the users input.");
+		//This method will test the users input.");
 		System.out.println("The user selected to have: "+ binCount  + " bins and " +  ballCount + " balls!");
 	}
 
